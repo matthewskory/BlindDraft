@@ -1,0 +1,42 @@
+body {
+	background: url(../img/beerflight.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	font-family: font-family: 'Amatic SC', cursive;
+}
+
+#main-container {
+	border: 2 solid #B4B3B3;
+	border-radius: 2%;
+	background: #B4B3B3;
+	opacity: .9;
+	padding: 20px 20px 20px 20px;
+}
+
+#main-title {
+	color: #EFEFEF;
+	font-size: 70px;
+	font-family: 'Special Elite', cursive;
+	padding-top: 20px;
+
+}
+#letter1{
+  color: #EFEFEF;
+  width:50px;
+  height: 50px;
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  opacity: .8;
+  font-family: 'Special Elite', cursive;
+  }
+
+ p {
+ 	color : #EFEFEF;
+ 	font-size: 20px;
+ }
+ .form-control {
+ 	text-align: center;
+ }
