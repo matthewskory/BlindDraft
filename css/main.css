@@ -22,6 +22,13 @@ body {
 	padding-top: 20px;
 
 }
+.secondary-title {
+  color: #EFEFEF;
+  font-size: 40px;
+  font-family: 'Special Elite', cursive;
+  padding-top: 5px;
+
+}
 #letter1{
   color: #EFEFEF;
   width:50px;

@@ -7,14 +7,14 @@
     <meta name="description" content="">
     <meta name="Matthew Kory" content="">
 
-    <title>Blind Draft</title>
+    <title>Blind Draft - Create a Flight</title>
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 
 
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
 	<!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -41,14 +41,23 @@
   	<center>
 		<div class="row">
 			<div id="main-container" class="col-xs-6 col-xs-offset-3">
-	    		<h1 id="main-title">Blind Draft</h1>
-	    		<p>Blind Draft is a drinking game which tests your palate against a randomly sorted list of beers. Make it harder by focusing your flight on a specific style or country for an even more challenging experience. <br> <br>
-	    		When you're ready to play, type in your Flight Number below and click play. <br>
-	    	</p>
-	    	<input type="text" class="form-control" placeholder="Text input">
-	    	<button type="button" class="btn btn-primary btn-block btn-lg">Play</button><br><br>
-	    	<p>To create a flight click below.</p>
-	    	<button type="button" onclick="location.href='views/create.html'"class="btn btn-primary btn-block btn-lg">Create a Flight and get a Number</button>
+				<h1 id="main-title">Blind Draft</h1>
+				<h3 class="secondary-title">Create a Flight</h3>
+		    		<p>Use the buttons in the section below to add a blank input field for each beer being served. Then, add the beer names in the order you are serving them. <br>Only create as many text fields as you need.</p>
+<hr>
+<div class="inputs">
+      <div><input type="text" class='form-control' name="dynamic[]" class="field" value="Beer 1"></div>
+    </div>
+<div class="dynamic-form">
+  <button id="add" class="btn btn-default navbar-btn">Add</a></button>
+  <button id="remove" class="btn btn-default navbar-btn">Remove</a> </button> 
+  <button id="reset" class="btn btn-default navbar-btn">Reset</a>  </button>
+
+  <form>
+<hr>
+<p>Once all beers are listed above click the submit button create your list.</p>
+    <input name="submit" onclick ="submit()" type="button" class="submit btn btn-primary btn-block btn-lg" value="Create Flight">
+  </form>
 			</div>
 		</div>
 	</center>
@@ -56,6 +65,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
